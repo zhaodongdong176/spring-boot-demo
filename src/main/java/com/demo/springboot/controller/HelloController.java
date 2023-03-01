@@ -30,6 +30,7 @@ public class HelloController {
         System.out.println("3");
         System.out.println("4");
         System.out.println("5");
+        System.out.println("6");
 
         ArrayList<String> s = new ArrayList<>();
 

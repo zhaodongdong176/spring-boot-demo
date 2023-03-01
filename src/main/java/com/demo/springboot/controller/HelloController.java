@@ -15,9 +15,9 @@ import java.util.ArrayList;
 public class HelloController {
 
     /**
-     * 
+     *
      * @author zhaodd
-     * @date 2023/2/5 15:13:02 
+     * @date 2023/2/5 15:13:02
      * @return java.lang.String
      */
     @ResponseBody
@@ -32,6 +32,5 @@ public class HelloController {
 
         return "hello1";
     }
-
 
 }

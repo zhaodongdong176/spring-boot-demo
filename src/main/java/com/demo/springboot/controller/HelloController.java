@@ -33,9 +33,5 @@ public class HelloController {
         return "hello1";
     }
 
-    @Cacheable
-    public String test(){
-        return "";
-    }
 
 }

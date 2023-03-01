@@ -1,8 +1,11 @@
 package com.demo.springboot.controller;
 
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.ArrayList;
 
 /**
  * @author zhaodd
@@ -11,6 +14,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class HelloController {
 
+    /**
+     * 
+     * @author zhaodd
+     * @date 2023/2/5 15:13:02 
+     * @return java.lang.String
+     */
     @ResponseBody
     @RequestMapping("/hello")
     public String hello(){
@@ -18,7 +27,15 @@ public class HelloController {
         System.out.println("2");
         System.out.println("2");
         System.out.println("2");
+
+        ArrayList<String> s = new ArrayList<>();
+
         return "hello1";
+    }
+
+    @Cacheable
+    public String test(){
+        return "";
     }
 
 }

@@ -1,6 +1,5 @@
 package com.demo.springboot.controller;
 
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -29,7 +28,6 @@ public class HelloController {
         System.out.println("2");
         System.out.println("3");
         System.out.println("4");
-        System.out.println("6");
 
         ArrayList<String> s = new ArrayList<>();
 
